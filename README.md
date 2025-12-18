@@ -8,23 +8,17 @@ Bash
 
 # Clone the repository
 ```
-{
 git clone <your-repo-link>
-}
 ```
 
 # Navigate to the root directory
 ```
-{
 cd mlops-td
-}
 ```
 
 # Build and start the containers
 ```
-{
 docker-compose up --build
-}
 ```
 
 
