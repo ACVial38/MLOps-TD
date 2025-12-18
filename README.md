@@ -9,14 +9,17 @@ Bash
 # Clone the repository
 `code`
 git clone <your-repo-link>
+`code`
 
 # Navigate to the root directory
 `code`
 cd mlops-td
+`code`
 
 # Build and start the containers
 `code`
 docker-compose up --build
+`code`
 
 
 The UI will be accessible at http://localhost:8501 and the API documentation at http://localhost:8000/docs.
