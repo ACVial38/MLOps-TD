@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+    
+    server:
+        
+        image: mlops_server:latest
+        
+        build:
+            context: ./server
+            dockerfile: Dockerfile
+            
+        
+        ports:
+            - "8000:8000"
+        
+        
+
+    
+    client:
+        
+        image: mlops_client:latest
+        
+        build:
+            context: ./client
+            dockerfile: Dockerfile
+            
+        depends_on:
+            - server
+            
+        
+        environment:
+            
+            API_HOST: server
+            API_PORT: 8000
+            
+        ports:
+            - "8501:8501"
+            
+   
